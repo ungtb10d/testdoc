@@ -1,0 +1,10 @@
+http:// {
+
+	root * /
+
+	file_server browse {
+		root /
+		hide .git
+		index ''
+	}
+}
