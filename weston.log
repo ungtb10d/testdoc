@@ -947,3 +947,8 @@ Date: 2022-10-01 CEST
 [13:40:06.738] Audio sink thread: connection successful on socket (66).
 [13:40:06.738] RDP Sink version (1 - 1)
 [13:45:03.453] rdp_rail_idle_handler is called on peerCtx:0x5c9cd3689d60
+[14:31:19.754] Spawned Xwayland server, pid 964
+[14:31:20.271] xfixes version: 5.0
+[14:31:20.285] created wm, root 576
+[14:31:20.286] xfixes selection notify event: owner 2097153
+[14:31:20.286] our window, skipping

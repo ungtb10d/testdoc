@@ -1,2 +1,13 @@
 dbus[11]: Unknown username "pulse" in message bus configuration file
 libpng warning: iCCP: known incorrect sRGB profile
+glamor: 'wl_drm' not supported
+Missing Wayland requirements for glamor GBM backend
+Failed to initialize glamor, falling back to sw
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Internal error:   Could not resolve keysym XF86FullScreen
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 569, clipping.
+>                   X11 cannot support keycodes above 255.
+> Internal error:   Could not resolve keysym XF86FullScreen
+Errors from xkbcomp are not fatal to the X server
