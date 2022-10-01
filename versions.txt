@@ -1,0 +1,6 @@
+WSLg ( x86_64 ): 1.0.26+Branch.main.Sha.26ce2c09b86442f3c7f4f6462f770ed2afa76a25
+Mariner: VERSION="1.0.20210224"
+FreeRDP: b05321cd4e6a862aef76163a69db4e1910245736
+weston: 46756d0e77e5c01b5995fbbee6f3ab0db9b30612
+pulseaudio: 2f0f0b8c3872780f15e275fc12899f4564f01bd5
+mesa:

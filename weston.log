@@ -1,0 +1,949 @@
+Date: 2022-10-01 CEST
+[13:40:01.693] weston 9.0.0
+               https://wayland.freedesktop.org
+               Bug reports to: https://gitlab.freedesktop.org/wayland/weston/issues/
+               Build: 9.0.0-38-g46756d0e
+[13:40:01.693] Command line: /usr/bin/weston --backend=rdp-backend.so --xwayland --shell=rdprail-shell.so --logger-scopes=log,rdp-backend,rdprail-shell --log=/mnt/wslg/weston.log
+[13:40:01.693] OS: Linux, 5.18.0-rc1-next-20220405-microsoft-cbl, #1 SMP PREEMPT_DYNAMIC Tue Apr 5 09:10:20 MST 2022, x86_64
+[13:40:01.694] Using config file '/home/wslg/.config/weston.ini'
+[13:40:01.695] Output repaint window is 7 ms maximum.
+[13:40:01.695] Loading module '/usr/lib/libweston-9/rdp-backend.so'
+[13:40:01.705] using FreeRDP version 2.3.2
+Date: 2022-10-01 CEST
+[13:40:01.705] RDP backend: WESTON_RDP_DEBUG_LEVEL: 3
+[13:40:01.705] RDP backend: WESTON_RDP_MONITOR_REFRESH_RATE: 60000
+[13:40:01.705] RDP backend: timer resolution tv_sec:0 tv_nsec:1
+[13:40:01.705] RDP backend: Environment dump - start
+[13:40:01.705]   WSL_DISTRO_NAME=
+[13:40:01.705]   WSL2_SHARED_MEMORY_OB_DIRECTORY=WSL\A1619BE4-5B61-4F54-ADAD-D4564636BE35\wslg
+[13:40:01.705]   PWD=/
+[13:40:01.705]   NAME=blckswan
+[13:40:01.705]   WSL_FEATURE_FLAGS=7
+[13:40:01.705]   SHLVL=1
+[13:40:01.705]   WSL2_GUI_APPS_ENABLED=1
+[13:40:01.705]   WSL2_DISTRO_NAME=Ubuntu
+[13:40:01.705]   WSL2_VM_ID=A1619BE4-5B61-4F54-ADAD-D4564636BE35
+[13:40:01.705]   _=/usr/bin/WSLGd
+[13:40:01.705]   HOME=/home/wslg
+[13:40:01.705]   USER=wslg
+[13:40:01.705]   LOGNAME=wslg
+[13:40:01.705]   SHELL=/bin/bash
+[13:40:01.705]   PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+[13:40:01.705]   XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+[13:40:01.705]   WAYLAND_DISPLAY=wayland-0
+[13:40:01.705]   DISPLAY=:0
+[13:40:01.705]   XCURSOR_PATH=/usr/share/icons
+[13:40:01.705]   XCURSOR_THEME=whiteglass
+[13:40:01.705]   XCURSOR_SIZE=16
+[13:40:01.705]   PULSE_AUDIO_RDP_SINK=/mnt/wslg/PulseAudioRDPSink
+[13:40:01.705]   PULSE_AUDIO_RDP_SOURCE=/mnt/wslg/PulseAudioRDPSource
+[13:40:01.705]   USE_VSOCK=3
+[13:40:01.705]   WSL2_DEFAULT_APP_ICON=/usr/share/icons/wsl/linux.png
+[13:40:01.705]   WSL2_DEFAULT_APP_OVERLAY_ICON=/usr/share/icons/wsl/linux.png
+[13:40:01.705]   WESTON_DISABLE_ABSTRACT_FD=1
+[13:40:01.705]   WSL2_SHARED_MEMORY_MOUNT_POINT=/mnt/shared_memory
+[13:40:01.705]   WESTON_CONFIG_FILE=/home/wslg/.config/weston.ini
+[13:40:01.705] RDP backend: Environment dump - end
+[13:40:01.705] Using external fd for incoming connections: 3
+[13:40:01.705] Default head is being added
+[13:40:01.705] Registered plugin API 'weston_rdprail_api_v1' of size 56
+[13:40:01.705] RDPAPPLIST_MODULEDIR is set to /usr/lib/rdpapplist
+[13:40:01.706] RDP backend: use_rdpapplist = 1
+[13:40:01.723] RDP backend: use_gfxredir = 1
+[13:40:01.723] RDP backend: enable_hi_dpi_support = 1
+[13:40:01.723] RDP backend: enable_fractional_hi_dpi_support = 0
+[13:40:01.723] RDP backend: debug_desktop_scaling_factor = 0
+[13:40:01.723] RDP backend: enable_window_zorder_sync = 1
+[13:40:01.723] RDP backend: enable_distro_name_title = 1
+[13:40:01.723] RDP backend: enable_copy_warning_title = 0
+[13:40:01.723] Using VSOCK for incoming connections: 3
+[13:40:01.725] Registered plugin API 'weston_rdp_output_api_v1' of size 16
+[13:40:01.725] Head attaching: rdp-0, index:0, is_primary: 1
+[13:40:01.725] get_config: attached head [0]: make:(null), mode:(null), name:rdp-0, (0x5c9cd3680340)
+[13:40:01.725] get_config: attached head [0]: x:0, y:0, width:0, height:0
+[13:40:01.725] set_size: attached head [0]: make:weston, mode:rdp, name:rdp-0, (0x5c9cd3680340)
+[13:40:01.725] set_size: attached head [0]: x:0, y:0, width:0, height:0
+[13:40:01.725] Output 'rdp-0' enabled with head(s) rdp-0
+[13:40:01.725] Compositor capabilities:
+               arbitrary surface rotation: yes
+               screen capture uses y-flip: no
+               presentation clock: CLOCK_MONOTONIC_RAW, id 4
+               presentation clock resolution: 0.000000001 s
+[13:40:01.726] Loading module '/usr/lib/weston/rdprail-shell.so'
+[13:40:01.728] RDPRAIL-shell: WESTON_RDPRAIL_SHELL_DEBUG_LEVEL: 3.
+Date: 2022-10-01 CEST
+[13:40:01.728] wet_shell_init: distro name Ubuntu (6)
+[13:40:01.728] WESTON_RDPRAIL_SHELL_DISABLE_APPEND_DISTRONAME_STARTMEN:1
+[13:40:01.730] WSL2_DEFAULT_APP_ICON:/usr/share/icons/wsl/linux.png
+[13:40:01.732] WSL2_DEFAULT_APP_OVERLAY_ICON:/usr/share/icons/wsl/linux.png
+[13:40:01.732] WESTON_RDPRAIL_SHELL_DISABLE_BLEND_OVERLAY_ICON_TASKBAR:1
+[13:40:01.732] WESTON_RDPRAIL_SHELL_DISABLE_BLEND_OVERLAY_ICON_APPLIST:1
+[13:40:01.732] rdp_rail_shell_initialize_notify: shell: distro name: Ubuntu
+[13:40:01.733] app_list_monitor_thread: running in system-distro with user-distro: Ubuntu
+[13:40:01.733] app_list_monitor_thread: open(/proc/self/ns/mnt)
+[13:40:01.733] app_list_monitor_thread: open(/proc/2/ns/mnt)
+[13:40:01.734] Loading module '/usr/lib/libweston-9/xwayland.so'
+[13:40:01.734] app_list_monitor_thread: inotify_add_watch(/usr/share/applications)
+[13:40:01.737] app_list_monitor_thread: /usr/local/share/applications doesn't exist, skipping.
+[13:40:01.737] app list folder[0]: /usr/share/applications
+[13:40:01.738] Registered plugin API 'weston_xwayland_v1' of size 32
+[13:40:01.738] Registered plugin API 'weston_xwayland_surface_v1' of size 48
+[13:40:01.738] Not using abstract fd for Xwayland
+[13:40:01.738] xserver listening on display :0
+[13:40:01.738] desktop file: /usr/share/applications/xfce-keyboard-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.738] app list entry failed to update: Key:xfce-keyboard-settings
+[13:40:01.738] free_app_entry(): (null): /usr/share/applications/xfce-keyboard-settings.desktop
+[13:40:01.743] desktop file: /usr/share/applications/xfce4-appfinder.desktop
+[13:40:01.743]     Name[en_US]:Application Finder (Ubuntu)
+[13:40:01.743]     Exec:xfce4-appfinder
+[13:40:01.743]     TryExec:(null)
+[13:40:01.743]     WorkingDir:(null)
+[13:40:01.743]     Icon name:org.xfce.appfinder
+[13:40:01.743]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.appfinder.png
+[13:40:01.743] app list entry updated: Key:xfce4-appfinder, Name:Application Finder (Ubuntu)
+[13:40:01.743] desktop file: /usr/share/applications/xfce4-color-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.743] app list entry failed to update: Key:xfce4-color-settings
+[13:40:01.743] free_app_entry(): (null): /usr/share/applications/xfce4-color-settings.desktop
+[13:40:01.754] desktop file: /usr/share/applications/bvnc.desktop
+[13:40:01.754]     Name[en_US]:Avahi VNC Server Browser (Ubuntu)
+[13:40:01.754]     Exec:/usr/bin/bvnc
+[13:40:01.754]     TryExec:(null)
+[13:40:01.754]     WorkingDir:(null)
+[13:40:01.754]     Icon name:network-wired
+[13:40:01.754]     Icon file:(null)
+[13:40:01.754] app list entry updated: Key:bvnc, Name:Avahi VNC Server Browser (Ubuntu)
+[13:40:01.755] desktop file: /usr/share/applications/git-annex.desktop
+[13:40:01.755]     Name[en_US]:Git Annex (Ubuntu)
+[13:40:01.755]     Exec:/usr/bin/git-annex webapp
+[13:40:01.755]     TryExec:(null)
+[13:40:01.755]     WorkingDir:(null)
+[13:40:01.755]     Icon name:git-annex
+[13:40:01.755]     Icon file:/usr/share/icons/hicolor/16x16/apps/git-annex.png
+[13:40:01.755] app list entry updated: Key:git-annex, Name:Git Annex (Ubuntu)
+[13:40:01.755] desktop file: /usr/share/applications/xfce4-web-browser.desktop has OnlyShowIn XFCE;
+[13:40:01.755] app list entry failed to update: Key:xfce4-web-browser
+[13:40:01.755] free_app_entry(): (null): /usr/share/applications/xfce4-web-browser.desktop
+[13:40:01.756] desktop file: /usr/share/applications/thunar-settings.desktop
+[13:40:01.756]     Name[en_US]:File Manager Settings (Ubuntu)
+[13:40:01.756]     Exec:thunar-settings
+[13:40:01.756]     TryExec:(null)
+[13:40:01.756]     WorkingDir:(null)
+[13:40:01.756]     Icon name:org.xfce.thunar
+[13:40:01.756]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:01.756] app list entry updated: Key:thunar-settings, Name:File Manager Settings (Ubuntu)
+[13:40:01.756] desktop file: /usr/share/applications/polkit-gnome-authentication-agent-1.desktop has NoDisplay specified
+[13:40:01.756] app list entry failed to update: Key:polkit-gnome-authentication-agent-1
+[13:40:01.756] free_app_entry(): (null): /usr/share/applications/polkit-gnome-authentication-agent-1.desktop
+[13:40:01.758] desktop file: /usr/share/applications/panel-preferences.desktop has OnlyShowIn XFCE;
+[13:40:01.758] app list entry failed to update: Key:panel-preferences
+[13:40:01.758] free_app_entry(): (null): /usr/share/applications/panel-preferences.desktop
+[13:40:01.759] desktop file: /usr/share/applications/xfce-display-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.759] app list entry failed to update: Key:xfce-display-settings
+[13:40:01.759] free_app_entry(): (null): /usr/share/applications/xfce-display-settings.desktop
+[13:40:01.759] desktop file: /usr/share/applications/xfce4-about.desktop has OnlyShowIn XFCE;
+[13:40:01.759] app list entry failed to update: Key:xfce4-about
+[13:40:01.759] free_app_entry(): (null): /usr/share/applications/xfce4-about.desktop
+[13:40:01.760] desktop file: /usr/share/applications/xfce4-settings-editor.desktop has OnlyShowIn XFCE;
+[13:40:01.760] app list entry failed to update: Key:xfce4-settings-editor
+[13:40:01.760] free_app_entry(): (null): /usr/share/applications/xfce4-settings-editor.desktop
+[13:40:01.760] desktop file: /usr/share/applications/xfce-ui-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.760] app list entry failed to update: Key:xfce-ui-settings
+[13:40:01.760] free_app_entry(): (null): /usr/share/applications/xfce-ui-settings.desktop
+[13:40:01.760] desktop file: /usr/share/applications/xfce4-mime-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.760] app list entry failed to update: Key:xfce4-mime-settings
+[13:40:01.760] free_app_entry(): (null): /usr/share/applications/xfce4-mime-settings.desktop
+[13:40:01.761] desktop file: /usr/share/applications/qv4l2.desktop
+[13:40:01.761]     Name[en_US]:Qt V4L2 test Utility (Ubuntu)
+[13:40:01.761]     Exec:qv4l2
+[13:40:01.761]     TryExec:(null)
+[13:40:01.761]     WorkingDir:(null)
+[13:40:01.761]     Icon name:qv4l2
+[13:40:01.761]     Icon file:/usr/share/icons/hicolor/32x32/apps/qv4l2.png
+[13:40:01.761] app list entry updated: Key:qv4l2, Name:Qt V4L2 test Utility (Ubuntu)
+[13:40:01.762] desktop file: /usr/share/applications/java-java11-openjdk.desktop has NoDisplay specified
+[13:40:01.762] app list entry failed to update: Key:java-java11-openjdk
+[13:40:01.762] free_app_entry(): (null): /usr/share/applications/java-java11-openjdk.desktop
+[13:40:01.762] desktop file: /usr/share/applications/xfce4-file-manager.desktop has OnlyShowIn XFCE;
+[13:40:01.762] app list entry failed to update: Key:xfce4-file-manager
+[13:40:01.762] free_app_entry(): (null): /usr/share/applications/xfce4-file-manager.desktop
+[13:40:01.762] desktop file: /usr/share/applications/qvidcap.desktop
+[13:40:01.762]     Name[en_US]:Qt V4L2 video capture utility (Ubuntu)
+[13:40:01.762]     Exec:qvidcap
+[13:40:01.762]     TryExec:(null)
+[13:40:01.762]     WorkingDir:(null)
+[13:40:01.762]     Icon name:qvidcap
+[13:40:01.762]     Icon file:/usr/share/icons/hicolor/32x32/apps/qvidcap.png
+[13:40:01.762] app list entry updated: Key:qvidcap, Name:Qt V4L2 video capture utility (Ubuntu)
+[13:40:01.763] desktop file: /usr/share/applications/xfce4-accessibility-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.763] app list entry failed to update: Key:xfce4-accessibility-settings
+[13:40:01.763] free_app_entry(): (null): /usr/share/applications/xfce4-accessibility-settings.desktop
+[13:40:01.764] desktop file: /usr/share/applications/wine.desktop has NoDisplay specified
+[13:40:01.764] app list entry failed to update: Key:wine
+[13:40:01.764] free_app_entry(): (null): /usr/share/applications/wine.desktop
+[13:40:01.764] desktop file: /usr/share/applications/xfce4-notifyd-config.desktop has OnlyShowIn XFCE;
+[13:40:01.764] app list entry failed to update: Key:xfce4-notifyd-config
+[13:40:01.764] free_app_entry(): (null): /usr/share/applications/xfce4-notifyd-config.desktop
+[13:40:01.764] desktop file: /usr/share/applications/avahi-discover.desktop
+[13:40:01.764]     Name[en_US]:Avahi Zeroconf Browser (Ubuntu)
+[13:40:01.764]     Exec:/usr/bin/avahi-discover
+[13:40:01.764]     TryExec:(null)
+[13:40:01.764]     WorkingDir:(null)
+[13:40:01.764]     Icon name:network-wired
+[13:40:01.764]     Icon file:(null)
+[13:40:01.764] app list entry updated: Key:avahi-discover, Name:Avahi Zeroconf Browser (Ubuntu)
+[13:40:01.765] desktop file: /usr/share/applications/kitty-open.desktop has NoDisplay specified
+[13:40:01.765] app list entry failed to update: Key:kitty-open
+[13:40:01.765] free_app_entry(): (null): /usr/share/applications/kitty-open.desktop
+[13:40:01.765] desktop file: /usr/share/applications/xfce-mouse-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.765] app list entry failed to update: Key:xfce-mouse-settings
+[13:40:01.765] free_app_entry(): (null): /usr/share/applications/xfce-mouse-settings.desktop
+[13:40:01.765] desktop file: /usr/share/applications/vim.desktop is terminal based app
+[13:40:01.765] app list entry failed to update: Key:vim
+[13:40:01.766] free_app_entry(): (null): /usr/share/applications/vim.desktop
+[13:40:01.766] desktop file: /usr/share/applications/xfce4-terminal.desktop
+[13:40:01.766]     Name[en_US]:Xfce Terminal (Ubuntu)
+[13:40:01.766]     Exec:xfce4-terminal
+[13:40:01.766]     TryExec:(null)
+[13:40:01.766]     WorkingDir:(null)
+[13:40:01.766]     Icon name:org.xfce.terminal
+[13:40:01.766]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.terminal.png
+[13:40:01.766] app list entry updated: Key:xfce4-terminal, Name:Xfce Terminal (Ubuntu)
+[13:40:01.766] desktop file: /usr/share/applications/xfce4-terminal-emulator.desktop has OnlyShowIn XFCE;
+[13:40:01.766] app list entry failed to update: Key:xfce4-terminal-emulator
+[13:40:01.766] free_app_entry(): (null): /usr/share/applications/xfce4-terminal-emulator.desktop
+[13:40:01.767] desktop file: /usr/share/applications/xfce4-mail-reader.desktop has OnlyShowIn XFCE;
+[13:40:01.767] app list entry failed to update: Key:xfce4-mail-reader
+[13:40:01.767] free_app_entry(): (null): /usr/share/applications/xfce4-mail-reader.desktop
+[13:40:01.767] desktop file: /usr/share/applications/xfce-settings-manager.desktop has OnlyShowIn XFCE;
+[13:40:01.767] app list entry failed to update: Key:xfce-settings-manager
+[13:40:01.767] free_app_entry(): (null): /usr/share/applications/xfce-settings-manager.desktop
+[13:40:01.767] desktop file: /usr/share/applications/xfce-wmtweaks-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.767] app list entry failed to update: Key:xfce-wmtweaks-settings
+[13:40:01.767] free_app_entry(): (null): /usr/share/applications/xfce-wmtweaks-settings.desktop
+[13:40:01.768] desktop file: /usr/share/applications/thunar-volman-settings.desktop
+[13:40:01.768]     Name[en_US]:Removable Drives and Media (Ubuntu)
+[13:40:01.768]     Exec:thunar-volman-settings
+[13:40:01.768]     TryExec:(null)
+[13:40:01.768]     WorkingDir:(null)
+[13:40:01.768]     Icon name:org.xfce.volman
+[13:40:01.768]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.volman.png
+[13:40:01.768] app list entry updated: Key:thunar-volman-settings, Name:Removable Drives and Media (Ubuntu)
+[13:40:01.768] desktop file: /usr/share/applications/bssh.desktop
+[13:40:01.768]     Name[en_US]:Avahi SSH Server Browser (Ubuntu)
+[13:40:01.768]     Exec:/usr/bin/bssh
+[13:40:01.768]     TryExec:(null)
+[13:40:01.768]     WorkingDir:(null)
+[13:40:01.768]     Icon name:network-wired
+[13:40:01.768]     Icon file:(null)
+[13:40:01.768] app list entry updated: Key:bssh, Name:Avahi SSH Server Browser (Ubuntu)
+[13:40:01.769] desktop file: /usr/share/applications/xfce-wm-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.769] app list entry failed to update: Key:xfce-wm-settings
+[13:40:01.769] free_app_entry(): (null): /usr/share/applications/xfce-wm-settings.desktop
+[13:40:01.769] desktop file: /usr/share/applications/jshell-java11-openjdk.desktop is terminal based app
+[13:40:01.769] app list entry failed to update: Key:jshell-java11-openjdk
+[13:40:01.769] free_app_entry(): (null): /usr/share/applications/jshell-java11-openjdk.desktop
+[13:40:01.769] desktop file: /usr/share/applications/xfce4-run.desktop has OnlyShowIn XFCE;
+[13:40:01.769] app list entry failed to update: Key:xfce4-run
+[13:40:01.769] free_app_entry(): (null): /usr/share/applications/xfce4-run.desktop
+[13:40:01.770] desktop file: /usr/share/applications/xfce4-session-logout.desktop has OnlyShowIn XFCE;
+[13:40:01.770] app list entry failed to update: Key:xfce4-session-logout
+[13:40:01.770] free_app_entry(): (null): /usr/share/applications/xfce4-session-logout.desktop
+[13:40:01.770] desktop file: /usr/share/applications/xfce-workspaces-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.770] app list entry failed to update: Key:xfce-workspaces-settings
+[13:40:01.770] free_app_entry(): (null): /usr/share/applications/xfce-workspaces-settings.desktop
+[13:40:01.771] desktop file: /usr/share/applications/panel-desktop-handler.desktop has NoDisplay specified
+[13:40:01.771] app list entry failed to update: Key:panel-desktop-handler
+[13:40:01.771] free_app_entry(): (null): /usr/share/applications/panel-desktop-handler.desktop
+[13:40:01.771] desktop file: /usr/share/applications/xfce4-terminal-settings.desktop
+[13:40:01.771]     Name[en_US]:Xfce Terminal Settings (Ubuntu)
+[13:40:01.771]     Exec:xfce4-terminal --preferences
+[13:40:01.771]     TryExec:(null)
+[13:40:01.771]     WorkingDir:(null)
+[13:40:01.771]     Icon name:org.xfce.terminal-settings
+[13:40:01.771]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.terminal-settings.png
+[13:40:01.771] app list entry updated: Key:xfce4-terminal-settings, Name:Xfce Terminal Settings (Ubuntu)
+[13:40:01.771] desktop file: /usr/share/applications/gimp.desktop
+[13:40:01.772]     Name[en_US]:GNU Image Manipulation Program (Ubuntu)
+[13:40:01.772]     Exec:gimp-2.10 
+[13:40:01.772]     TryExec:gimp-2.10
+[13:40:01.772]     WorkingDir:(null)
+[13:40:01.772]     Icon name:gimp
+[13:40:01.772]     Icon file:/usr/share/icons/hicolor/48x48/apps/gimp.png
+[13:40:01.772] app list entry updated: Key:gimp, Name:GNU Image Manipulation Program (Ubuntu)
+[13:40:01.772] desktop file: /usr/share/applications/jconsole-java11-openjdk.desktop
+[13:40:01.772]     Name[en_US]:OpenJDK Java 11 Console (Ubuntu)
+[13:40:01.772]     Exec:/usr/lib/jvm/java-11-openjdk/bin/jconsole
+[13:40:01.772]     TryExec:(null)
+[13:40:01.772]     WorkingDir:(null)
+[13:40:01.772]     Icon name:java11-openjdk
+[13:40:01.772]     Icon file:/usr/share/icons/hicolor/48x48/apps/java11-openjdk.png
+[13:40:01.772] app list entry updated: Key:jconsole-java11-openjdk, Name:OpenJDK Java 11 Console (Ubuntu)
+[13:40:01.772] desktop file: /usr/share/applications/htop.desktop is terminal based app
+[13:40:01.772] app list entry failed to update: Key:htop
+[13:40:01.772] free_app_entry(): (null): /usr/share/applications/htop.desktop
+[13:40:01.773] desktop file: /usr/share/applications/xfce-backdrop-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.773] app list entry failed to update: Key:xfce-backdrop-settings
+[13:40:01.773] free_app_entry(): (null): /usr/share/applications/xfce-backdrop-settings.desktop
+[13:40:01.773] desktop file: /usr/share/applications/thunar-bulk-rename.desktop
+[13:40:01.773]     Name[en_US]:Bulk Rename (Ubuntu)
+[13:40:01.773]     Exec:thunar --bulk-rename 
+[13:40:01.773]     TryExec:(null)
+[13:40:01.773]     WorkingDir:(null)
+[13:40:01.773]     Icon name:org.xfce.thunar
+[13:40:01.773]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:01.773] app list entry updated: Key:thunar-bulk-rename, Name:Bulk Rename (Ubuntu)
+[13:40:01.773] desktop file: /usr/share/applications/thunar.desktop
+[13:40:01.773]     Name[en_US]:Thunar File Manager (Ubuntu)
+[13:40:01.773]     Exec:thunar 
+[13:40:01.773]     TryExec:(null)
+[13:40:01.773]     WorkingDir:(null)
+[13:40:01.773]     Icon name:org.xfce.thunar
+[13:40:01.773]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:01.773] app list entry updated: Key:thunar, Name:Thunar File Manager (Ubuntu)
+[13:40:01.774] desktop file: /usr/share/applications/xfce-session-settings.desktop has OnlyShowIn XFCE;
+[13:40:01.774] app list entry failed to update: Key:xfce-session-settings
+[13:40:01.774] free_app_entry(): (null): /usr/share/applications/xfce-session-settings.desktop
+[13:40:01.774] desktop file: /usr/share/applications/xfce4-power-manager-settings.desktop
+[13:40:01.774]     Name[en_US]:Power Manager (Ubuntu)
+[13:40:01.774]     Exec:xfce4-power-manager-settings
+[13:40:01.774]     TryExec:(null)
+[13:40:01.774]     WorkingDir:(null)
+[13:40:01.774]     Icon name:org.xfce.powermanager
+[13:40:01.774]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.powermanager.png
+[13:40:01.774] app list entry updated: Key:xfce4-power-manager-settings, Name:Power Manager (Ubuntu)
+[13:40:01.775] desktop file: /usr/share/applications/cmake-gui.desktop
+[13:40:01.775]     Name[en_US]:CMake (Ubuntu)
+[13:40:01.775]     Exec:cmake-gui 
+[13:40:01.775]     TryExec:(null)
+[13:40:01.775]     WorkingDir:(null)
+[13:40:01.775]     Icon name:CMakeSetup
+[13:40:01.775]     Icon file:/usr/share/icons/hicolor/128x128/apps/CMakeSetup.png
+[13:40:01.775] app list entry updated: Key:cmake-gui, Name:CMake (Ubuntu)
+[13:40:01.776] desktop file: /usr/share/applications/kitty.desktop
+[13:40:01.776]     Name[en_US]:kitty (Ubuntu)
+[13:40:01.776]     Exec:kitty
+[13:40:01.776]     TryExec:kitty
+[13:40:01.776]     WorkingDir:(null)
+[13:40:01.776]     Icon name:kitty
+[13:40:01.776]     Icon file:/usr/share/pixmaps/kitty.png
+[13:40:01.776] app list entry updated: Key:kitty, Name:kitty (Ubuntu)
+[13:40:01.776] app list folder[1]: /usr/local/share/applications
+[13:40:03.336] Client: ClientStatus:0x3f5
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_ALLOWLOCALMOVESIZE
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_ZORDER_SYNC
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_WINDOW_RESIZE_MARGIN_SUPPORTED
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_HIGH_DPI_ICONS_SUPPORTED
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_APPBAR_REMOTING_SUPPORTED
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_POWER_DISPLAY_REQUEST_SUPPORTED
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_GET_APPID_RESPONSE_EX_SUPPORTED
+[13:40:03.336]      - TS_RAIL_CLIENTSTATUS_BIDIRECTIONAL_CLOAK_SUPPORTED
+[13:40:03.336] Client HandShake buildNumber:22000
+[13:40:03.422] Server AppList caps version:3
+[13:40:03.442] Client: gfxredir_caps: length:28
+[13:40:03.442] Client: gfxredir_caps[0]: signature:0x53504143
+[13:40:03.442] Client: gfxredir_caps[0]: version:0x1
+[13:40:03.442] Client: GrfxCaps count:0x8
+[13:40:03.442] Client: gfxredir_caps[0]: length:12
+[13:40:03.442] Client: gfxredir_caps[1]: signature:0x53504143
+[13:40:03.442] Client: gfxredir_caps[1]: version:0x2000
+[13:40:03.442] Client: gfxredir_caps[1]: length:16
+[13:40:03.442] Client: gfxredir_caps[1]: supportedFeatures:0x0
+[13:40:03.442] Client: gfxredir selected caps: version:0x2000
+[13:40:03.442] Client: GrfxCaps[0] version:0x80004 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_8
+[13:40:03.442] Client: GrfxCaps[1] version:0x80105 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_81
+[13:40:03.442] Client: GrfxCaps[2] version:0xa0002 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_10
+[13:40:03.442] Client: GrfxCaps[3] version:0xa0200 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_102
+[13:40:03.442] Client: GrfxCaps[4] version:0xa0301 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_103
+[13:40:03.442] Client: GrfxCaps[5] version:0xa0400 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_104
+[13:40:03.442] Client: GrfxCaps[6] version:0xa0502 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_105
+[13:40:03.442] Client: GrfxCaps[7] version:0xa0600 length:4 flags:0x0
+[13:40:03.442] 	Version : RDPGFX_CAPVERSION_106
+[13:40:03.453] Pulse Audio source listener socket on /mnt/wslg/PulseAudioRDPSource
+[13:40:03.453] xf_peer_adjust_monitor_layout:
+[13:40:03.453]   DesktopWidth:1920, DesktopHeight:1080
+[13:40:03.453] AudioIn source_thread: Listening for audio in connection.
+[13:40:03.453]   UseMultimon:0
+[13:40:03.453]   ForceMultimon:0
+[13:40:03.453]   MonitorCount:0
+[13:40:03.453]   HasMonitorAttributes:0
+[13:40:03.453]   HiDefRemoteApp:1
+[13:40:03.453] disp_monitor_validate_and_compute_layout:---INPUT---
+[13:40:03.453] 	rdpMonitor[0]: x:0, y:0, width:1920, height:1080, is_primary:1
+[13:40:03.453] 	rdpMonitor[0]: physicalWidth:344, physicalHeight:194, orientation:0
+[13:40:03.453] 	rdpMonitor[0]: desktopScaleFactor:100, deviceScaleFactor:100
+[13:40:03.453] 	rdpMonitor[0]: scale:1, client scale :1.00
+[13:40:03.453] Client desktop upper left coordinate (0,0)
+[13:40:03.453] disp_monitor_validate_and_compute_layout:---OUTPUT---
+[13:40:03.453] 	rdpMonitor[0]: x:0, y:0, width:1920, height:1080, is_primary:1
+[13:40:03.453] 	rdpMonitor[0]: weston x:0, y:0, width:1920, height:1080
+[13:40:03.453] 	rdpMonitor[0]: physicalWidth:344, physicalHeight:194, orientation:0
+[13:40:03.453] 	rdpMonitor[0]: desktopScaleFactor:100, deviceScaleFactor:100
+[13:40:03.453] 	rdpMonitor[0]: scale:1, clientScale:1.00
+[13:40:03.453] Head mode change:rdp-0 OLD width:0, height:0, scale:1, clientScale:1.000000
+[13:40:03.453] Head mode change:rdp-0 NEW width:1920, height:1080, scale:1, clientScale:1.000000
+[13:40:03.453] move head/output rdp-0 (0,0) -> (0,0)
+[13:40:03.453] client origin (0,0) is (0,0) in Weston space
+[13:40:03.453] client virtual desktop is (0,0) - (1920,1080)
+[13:40:03.453] weston virtual desktop is (0,0) - (1920,1080)
+[13:40:03.453] kbd_layout:0x414 kbd_type:0x4 kbd_subType:0x0 kbd_functionKeys:0xc
+[13:40:03.453] convert_rdp_keyboard_to_xkb_rule_names: matching layout=no variant=(null) options=(null)
+[13:40:03.466] Detected a monitor change on head 'rdp-0', not bothering to do anything about it.
+[13:40:03.466] Client ExecOrder:0x00000008, Program:dummy-entry, WorkingDir:(null), RemoteApplicationArguments:(null)
+[13:40:03.466] Client ExecOrder launching dummy-entry
+[13:40:03.466] launching 'dummy-entry'
+[13:40:03.467] Client: ClientSysparam: filterKeys
+[13:40:03.467] Client: ClientSysparam: toggleKeys:58
+[13:40:03.467] Client: ClientSysparam: stickyKeys:510
+[13:40:03.467] Client: ClientSysparam: caretWidth:1
+[13:40:03.467] Client: ClientSysparam: highContrast
+[13:40:03.467] Client: ClientSysparam: taskbarPos:(left:0, top:1040, right:1920, bottom:1080)
+[13:40:03.467] Client: ClientSysparam: mouseButtonSwap:0
+[13:40:03.467] Client: ClientSysparam: keyboardPref:0
+[13:40:03.467] Client: ClientSysparam: dragFullWindows:1
+[13:40:03.467] Client: ClientSysparam: keyboardCues:0
+[13:40:03.467] Client: ClientSysparam: workArea:(left:0, top:0, right:1920, bottom:1040)
+[13:40:03.467] Translated workarea:(0,0)-(1920,1040) at rdp-0:(0,0)-(1920,1080)
+[13:40:03.467] compositor: executing 'dummy-entry' failed: No such file or directory
+[13:40:03.467] Client AppList caps version:3
+[13:40:03.467] Client AppList client language id: en_GB
+[13:40:03.467] app_list_monitor_thread: startRdpNotifyEvent is signalled. 0 - en_GB
+[13:40:03.467] app_list_start_rdp_notify(): client language is changed from en_US to en_GB
+[13:40:03.467] Client: ClientSysparam: filterKeys
+[13:40:03.467] app list folder[0]: /usr/share/applications
+[13:40:03.467] Client: ClientSysparam: toggleKeys:58
+[13:40:03.467] Client: ClientSysparam: stickyKeys:510
+[13:40:03.467] Client: ClientSysparam: caretWidth:1
+[13:40:03.467] Client: ClientSysparam: highContrast
+[13:40:03.467] Client: ClientSysparam: taskbarPos:(left:0, top:1040, right:1920, bottom:1080)
+[13:40:03.467] Client: ClientSysparam: mouseButtonSwap:0
+[13:40:03.467] Client: ClientSysparam: keyboardPref:0
+[13:40:03.467] Client: ClientSysparam: dragFullWindows:1
+[13:40:03.467] Client: ClientSysparam: keyboardCues:0
+[13:40:03.467] Client: ClientSysparam: workArea:(left:0, top:0, right:1920, bottom:1040)
+[13:40:03.467] Translated workarea:(0,0)-(1920,1040) at rdp-0:(0,0)-(1920,1080)
+[13:40:03.467] desktop file: /usr/share/applications/xfce-keyboard-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.467] app list entry failed to update: Key:xfce-keyboard-settings
+[13:40:03.467] free_app_entry(): (null): /usr/share/applications/xfce-keyboard-settings.desktop
+[13:40:03.467] desktop file: /usr/share/applications/xfce4-appfinder.desktop
+[13:40:03.467]     Name[en_GB]:Application Finder (Ubuntu)
+[13:40:03.467]     Exec:xfce4-appfinder
+[13:40:03.467]     TryExec:(null)
+[13:40:03.467]     WorkingDir:(null)
+[13:40:03.467]     Icon name:org.xfce.appfinder
+[13:40:03.467]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.appfinder.png
+[13:40:03.467] app list entry updated: Key:xfce4-appfinder, Name:Application Finder (Ubuntu)
+[13:40:03.467] free_app_entry(): Application Finder (Ubuntu): /usr/share/applications/xfce4-appfinder.desktop
+[13:40:03.467] Client ExecOrder program terminated
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-color-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-color-settings
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-color-settings.desktop
+[13:40:03.468] dummy-entry exited with status 255
+[13:40:03.468] desktop file: /usr/share/applications/bvnc.desktop
+[13:40:03.468]     Name[en_GB]:Avahi VNC Server Browser (Ubuntu)
+[13:40:03.468]     Exec:/usr/bin/bvnc
+[13:40:03.468]     TryExec:(null)
+[13:40:03.468]     WorkingDir:(null)
+[13:40:03.468]     Icon name:network-wired
+[13:40:03.468]     Icon file:(null)
+[13:40:03.468] app list entry updated: Key:bvnc, Name:Avahi VNC Server Browser (Ubuntu)
+[13:40:03.468] free_app_entry(): Avahi VNC Server Browser (Ubuntu): /usr/share/applications/bvnc.desktop
+[13:40:03.468] desktop file: /usr/share/applications/git-annex.desktop
+[13:40:03.468]     Name[en_GB]:Git Annex (Ubuntu)
+[13:40:03.468]     Exec:/usr/bin/git-annex webapp
+[13:40:03.468]     TryExec:(null)
+[13:40:03.468]     WorkingDir:(null)
+[13:40:03.468]     Icon name:git-annex
+[13:40:03.468]     Icon file:/usr/share/icons/hicolor/16x16/apps/git-annex.png
+[13:40:03.468] app list entry updated: Key:git-annex, Name:Git Annex (Ubuntu)
+[13:40:03.468] free_app_entry(): Git Annex (Ubuntu): /usr/share/applications/git-annex.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-web-browser.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-web-browser
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-web-browser.desktop
+[13:40:03.468] desktop file: /usr/share/applications/thunar-settings.desktop
+[13:40:03.468]     Name[en_GB]:File Manager Settings (Ubuntu)
+[13:40:03.468]     Exec:thunar-settings
+[13:40:03.468]     TryExec:(null)
+[13:40:03.468]     WorkingDir:(null)
+[13:40:03.468]     Icon name:org.xfce.thunar
+[13:40:03.468]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:03.468] app list entry updated: Key:thunar-settings, Name:File Manager Settings (Ubuntu)
+[13:40:03.468] free_app_entry(): File Manager Settings (Ubuntu): /usr/share/applications/thunar-settings.desktop
+[13:40:03.468] desktop file: /usr/share/applications/polkit-gnome-authentication-agent-1.desktop has NoDisplay specified
+[13:40:03.468] app list entry failed to update: Key:polkit-gnome-authentication-agent-1
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/polkit-gnome-authentication-agent-1.desktop
+[13:40:03.468] desktop file: /usr/share/applications/panel-preferences.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:panel-preferences
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/panel-preferences.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce-display-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce-display-settings
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce-display-settings.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-about.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-about
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-about.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-settings-editor.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-settings-editor
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-settings-editor.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce-ui-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce-ui-settings
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce-ui-settings.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-mime-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-mime-settings
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-mime-settings.desktop
+[13:40:03.468] desktop file: /usr/share/applications/qv4l2.desktop
+[13:40:03.468]     Name[en_GB]:Qt V4L2 test Utility (Ubuntu)
+[13:40:03.468]     Exec:qv4l2
+[13:40:03.468]     TryExec:(null)
+[13:40:03.468]     WorkingDir:(null)
+[13:40:03.468]     Icon name:qv4l2
+[13:40:03.468]     Icon file:/usr/share/icons/hicolor/32x32/apps/qv4l2.png
+[13:40:03.468] app list entry updated: Key:qv4l2, Name:Qt V4L2 test Utility (Ubuntu)
+[13:40:03.468] free_app_entry(): Qt V4L2 test Utility (Ubuntu): /usr/share/applications/qv4l2.desktop
+[13:40:03.468] desktop file: /usr/share/applications/java-java11-openjdk.desktop has NoDisplay specified
+[13:40:03.468] app list entry failed to update: Key:java-java11-openjdk
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/java-java11-openjdk.desktop
+[13:40:03.468] desktop file: /usr/share/applications/xfce4-file-manager.desktop has OnlyShowIn XFCE;
+[13:40:03.468] app list entry failed to update: Key:xfce4-file-manager
+[13:40:03.468] free_app_entry(): (null): /usr/share/applications/xfce4-file-manager.desktop
+[13:40:03.469] desktop file: /usr/share/applications/qvidcap.desktop
+[13:40:03.469]     Name[en_GB]:Qt V4L2 video capture utility (Ubuntu)
+[13:40:03.469]     Exec:qvidcap
+[13:40:03.469]     TryExec:(null)
+[13:40:03.469]     WorkingDir:(null)
+[13:40:03.469]     Icon name:qvidcap
+[13:40:03.469]     Icon file:/usr/share/icons/hicolor/32x32/apps/qvidcap.png
+[13:40:03.469] app list entry updated: Key:qvidcap, Name:Qt V4L2 video capture utility (Ubuntu)
+[13:40:03.469] free_app_entry(): Qt V4L2 video capture utility (Ubuntu): /usr/share/applications/qvidcap.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-accessibility-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-accessibility-settings
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-accessibility-settings.desktop
+[13:40:03.469] desktop file: /usr/share/applications/wine.desktop has NoDisplay specified
+[13:40:03.469] app list entry failed to update: Key:wine
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/wine.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-notifyd-config.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-notifyd-config
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-notifyd-config.desktop
+[13:40:03.469] desktop file: /usr/share/applications/avahi-discover.desktop
+[13:40:03.469]     Name[en_GB]:Avahi Zeroconf Browser (Ubuntu)
+[13:40:03.469]     Exec:/usr/bin/avahi-discover
+[13:40:03.469]     TryExec:(null)
+[13:40:03.469]     WorkingDir:(null)
+[13:40:03.469]     Icon name:network-wired
+[13:40:03.469]     Icon file:(null)
+[13:40:03.469] app list entry updated: Key:avahi-discover, Name:Avahi Zeroconf Browser (Ubuntu)
+[13:40:03.469] free_app_entry(): Avahi Zeroconf Browser (Ubuntu): /usr/share/applications/avahi-discover.desktop
+[13:40:03.469] desktop file: /usr/share/applications/kitty-open.desktop has NoDisplay specified
+[13:40:03.469] app list entry failed to update: Key:kitty-open
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/kitty-open.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce-mouse-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce-mouse-settings
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce-mouse-settings.desktop
+[13:40:03.469] desktop file: /usr/share/applications/vim.desktop is terminal based app
+[13:40:03.469] app list entry failed to update: Key:vim
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/vim.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-terminal.desktop
+[13:40:03.469]     Name[en_GB]:Xfce Terminal (Ubuntu)
+[13:40:03.469]     Exec:xfce4-terminal
+[13:40:03.469]     TryExec:(null)
+[13:40:03.469]     WorkingDir:(null)
+[13:40:03.469]     Icon name:org.xfce.terminal
+[13:40:03.469]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.terminal.png
+[13:40:03.469] app list entry updated: Key:xfce4-terminal, Name:Xfce Terminal (Ubuntu)
+[13:40:03.469] free_app_entry(): Xfce Terminal (Ubuntu): /usr/share/applications/xfce4-terminal.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-terminal-emulator.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-terminal-emulator
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-terminal-emulator.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-mail-reader.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-mail-reader
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-mail-reader.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce-settings-manager.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce-settings-manager
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce-settings-manager.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce-wmtweaks-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce-wmtweaks-settings
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce-wmtweaks-settings.desktop
+[13:40:03.469] desktop file: /usr/share/applications/thunar-volman-settings.desktop
+[13:40:03.469]     Name[en_GB]:Removable Drives and Media (Ubuntu)
+[13:40:03.469]     Exec:thunar-volman-settings
+[13:40:03.469]     TryExec:(null)
+[13:40:03.469]     WorkingDir:(null)
+[13:40:03.469]     Icon name:org.xfce.volman
+[13:40:03.469]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.volman.png
+[13:40:03.469] app list entry updated: Key:thunar-volman-settings, Name:Removable Drives and Media (Ubuntu)
+[13:40:03.469] free_app_entry(): Removable Drives and Media (Ubuntu): /usr/share/applications/thunar-volman-settings.desktop
+[13:40:03.469] desktop file: /usr/share/applications/bssh.desktop
+[13:40:03.469]     Name[en_GB]:Avahi SSH Server Browser (Ubuntu)
+[13:40:03.469]     Exec:/usr/bin/bssh
+[13:40:03.469]     TryExec:(null)
+[13:40:03.469]     WorkingDir:(null)
+[13:40:03.469]     Icon name:network-wired
+[13:40:03.469]     Icon file:(null)
+[13:40:03.469] app list entry updated: Key:bssh, Name:Avahi SSH Server Browser (Ubuntu)
+[13:40:03.469] free_app_entry(): Avahi SSH Server Browser (Ubuntu): /usr/share/applications/bssh.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce-wm-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce-wm-settings
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce-wm-settings.desktop
+[13:40:03.469] desktop file: /usr/share/applications/jshell-java11-openjdk.desktop is terminal based app
+[13:40:03.469] app list entry failed to update: Key:jshell-java11-openjdk
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/jshell-java11-openjdk.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-run.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-run
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-run.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce4-session-logout.desktop has OnlyShowIn XFCE;
+[13:40:03.469] app list entry failed to update: Key:xfce4-session-logout
+[13:40:03.469] free_app_entry(): (null): /usr/share/applications/xfce4-session-logout.desktop
+[13:40:03.469] desktop file: /usr/share/applications/xfce-workspaces-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.470] app list entry failed to update: Key:xfce-workspaces-settings
+[13:40:03.470] free_app_entry(): (null): /usr/share/applications/xfce-workspaces-settings.desktop
+[13:40:03.470] desktop file: /usr/share/applications/panel-desktop-handler.desktop has NoDisplay specified
+[13:40:03.470] app list entry failed to update: Key:panel-desktop-handler
+[13:40:03.470] free_app_entry(): (null): /usr/share/applications/panel-desktop-handler.desktop
+[13:40:03.470] desktop file: /usr/share/applications/xfce4-terminal-settings.desktop
+[13:40:03.470]     Name[en_GB]:Xfce Terminal Settings (Ubuntu)
+[13:40:03.470]     Exec:xfce4-terminal --preferences
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:org.xfce.terminal-settings
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.terminal-settings.png
+[13:40:03.470] app list entry updated: Key:xfce4-terminal-settings, Name:Xfce Terminal Settings (Ubuntu)
+[13:40:03.470] free_app_entry(): Xfce Terminal Settings (Ubuntu): /usr/share/applications/xfce4-terminal-settings.desktop
+[13:40:03.470] desktop file: /usr/share/applications/gimp.desktop
+[13:40:03.470]     Name[en_GB]:GNU Image Manipulation Program (Ubuntu)
+[13:40:03.470]     Exec:gimp-2.10 
+[13:40:03.470]     TryExec:gimp-2.10
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:gimp
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/48x48/apps/gimp.png
+[13:40:03.470] app list entry updated: Key:gimp, Name:GNU Image Manipulation Program (Ubuntu)
+[13:40:03.470] free_app_entry(): GNU Image Manipulation Program (Ubuntu): /usr/share/applications/gimp.desktop
+[13:40:03.470] desktop file: /usr/share/applications/jconsole-java11-openjdk.desktop
+[13:40:03.470]     Name[en_GB]:OpenJDK Java 11 Console (Ubuntu)
+[13:40:03.470]     Exec:/usr/lib/jvm/java-11-openjdk/bin/jconsole
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:java11-openjdk
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/48x48/apps/java11-openjdk.png
+[13:40:03.470] app list entry updated: Key:jconsole-java11-openjdk, Name:OpenJDK Java 11 Console (Ubuntu)
+[13:40:03.470] free_app_entry(): OpenJDK Java 11 Console (Ubuntu): /usr/share/applications/jconsole-java11-openjdk.desktop
+[13:40:03.470] desktop file: /usr/share/applications/htop.desktop is terminal based app
+[13:40:03.470] app list entry failed to update: Key:htop
+[13:40:03.470] free_app_entry(): (null): /usr/share/applications/htop.desktop
+[13:40:03.470] desktop file: /usr/share/applications/xfce-backdrop-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.470] app list entry failed to update: Key:xfce-backdrop-settings
+[13:40:03.470] free_app_entry(): (null): /usr/share/applications/xfce-backdrop-settings.desktop
+[13:40:03.470] desktop file: /usr/share/applications/thunar-bulk-rename.desktop
+[13:40:03.470]     Name[en_GB]:Bulk Rename (Ubuntu)
+[13:40:03.470]     Exec:thunar --bulk-rename 
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:org.xfce.thunar
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:03.470] app list entry updated: Key:thunar-bulk-rename, Name:Bulk Rename (Ubuntu)
+[13:40:03.470] free_app_entry(): Bulk Rename (Ubuntu): /usr/share/applications/thunar-bulk-rename.desktop
+[13:40:03.470] desktop file: /usr/share/applications/thunar.desktop
+[13:40:03.470]     Name[en_GB]:Thunar File Manager (Ubuntu)
+[13:40:03.470]     Exec:thunar 
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:org.xfce.thunar
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+[13:40:03.470] app list entry updated: Key:thunar, Name:Thunar File Manager (Ubuntu)
+[13:40:03.470] free_app_entry(): Thunar File Manager (Ubuntu): /usr/share/applications/thunar.desktop
+[13:40:03.470] desktop file: /usr/share/applications/xfce-session-settings.desktop has OnlyShowIn XFCE;
+[13:40:03.470] app list entry failed to update: Key:xfce-session-settings
+[13:40:03.470] free_app_entry(): (null): /usr/share/applications/xfce-session-settings.desktop
+[13:40:03.470] desktop file: /usr/share/applications/xfce4-power-manager-settings.desktop
+[13:40:03.470]     Name[en_GB]:Power Manager (Ubuntu)
+[13:40:03.470]     Exec:xfce4-power-manager-settings
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:org.xfce.powermanager
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/128x128/apps/org.xfce.powermanager.png
+[13:40:03.470] app list entry updated: Key:xfce4-power-manager-settings, Name:Power Manager (Ubuntu)
+[13:40:03.470] free_app_entry(): Power Manager (Ubuntu): /usr/share/applications/xfce4-power-manager-settings.desktop
+[13:40:03.470] desktop file: /usr/share/applications/cmake-gui.desktop
+[13:40:03.470]     Name[en_GB]:CMake (Ubuntu)
+[13:40:03.470]     Exec:cmake-gui 
+[13:40:03.470]     TryExec:(null)
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:CMakeSetup
+[13:40:03.470]     Icon file:/usr/share/icons/hicolor/128x128/apps/CMakeSetup.png
+[13:40:03.470] app list entry updated: Key:cmake-gui, Name:CMake (Ubuntu)
+[13:40:03.470] free_app_entry(): CMake (Ubuntu): /usr/share/applications/cmake-gui.desktop
+[13:40:03.470] desktop file: /usr/share/applications/kitty.desktop
+[13:40:03.470]     Name[en_GB]:kitty (Ubuntu)
+[13:40:03.470]     Exec:kitty
+[13:40:03.470]     TryExec:kitty
+[13:40:03.470]     WorkingDir:(null)
+[13:40:03.470]     Icon name:kitty
+[13:40:03.470]     Icon file:/usr/share/pixmaps/kitty.png
+[13:40:03.470] app list entry updated: Key:kitty, Name:kitty (Ubuntu)
+[13:40:03.470] free_app_entry(): kitty (Ubuntu): /usr/share/applications/kitty.desktop
+[13:40:03.470] app list folder[1]: /usr/local/share/applications
+[13:40:03.471] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.471]     inSync: 1
+[13:40:03.471]     syncStart: 1
+[13:40:03.471]     syncEnd: 0
+[13:40:03.471]     newAppId: 1
+[13:40:03.471]     deleteAppId: 0
+[13:40:03.471]     deleteAppProvider: 0
+[13:40:03.471]     appId: xfce4-appfinder
+[13:40:03.471]     appGroup: (null)
+[13:40:03.471]     appExecPath: xfce4-appfinder
+[13:40:03.471]     appWorkingDir: (null)
+[13:40:03.471]     appDesc: Application Finder (Ubuntu)
+[13:40:03.471]     appIcon: 0x73b7100bd8e0
+[13:40:03.471]     appProvider: (null)
+[13:40:03.472] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.472]     inSync: 1
+[13:40:03.472]     syncStart: 0
+[13:40:03.472]     syncEnd: 0
+[13:40:03.472]     newAppId: 1
+[13:40:03.472]     deleteAppId: 0
+[13:40:03.472]     deleteAppProvider: 0
+[13:40:03.472]     appId: xfce4-terminal-settings
+[13:40:03.472]     appGroup: (null)
+[13:40:03.472]     appExecPath: xfce4-terminal --preferences
+[13:40:03.472]     appWorkingDir: (null)
+[13:40:03.472]     appDesc: Xfce Terminal Settings (Ubuntu)
+[13:40:03.472]     appIcon: 0x73b7100bd8e0
+[13:40:03.472]     appProvider: (null)
+[13:40:03.472] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.472]     inSync: 1
+[13:40:03.472]     syncStart: 0
+[13:40:03.472]     syncEnd: 0
+[13:40:03.472]     newAppId: 1
+[13:40:03.472]     deleteAppId: 0
+[13:40:03.472]     deleteAppProvider: 0
+[13:40:03.472]     appId: xfce4-terminal
+[13:40:03.472]     appGroup: (null)
+[13:40:03.472]     appExecPath: xfce4-terminal
+[13:40:03.472]     appWorkingDir: (null)
+[13:40:03.472]     appDesc: Xfce Terminal (Ubuntu)
+[13:40:03.472]     appIcon: 0x73b7100bd8e0
+[13:40:03.472]     appProvider: (null)
+[13:40:03.473] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.473]     inSync: 1
+[13:40:03.473]     syncStart: 0
+[13:40:03.473]     syncEnd: 0
+[13:40:03.473]     newAppId: 1
+[13:40:03.473]     deleteAppId: 0
+[13:40:03.473]     deleteAppProvider: 0
+[13:40:03.473]     appId: git-annex
+[13:40:03.473]     appGroup: (null)
+[13:40:03.473]     appExecPath: /usr/bin/git-annex webapp
+[13:40:03.473]     appWorkingDir: (null)
+[13:40:03.473]     appDesc: Git Annex (Ubuntu)
+[13:40:03.473]     appIcon: 0x73b7100bd8e0
+[13:40:03.473]     appProvider: (null)
+[13:40:03.473] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.473]     inSync: 1
+[13:40:03.473]     syncStart: 0
+[13:40:03.473]     syncEnd: 0
+[13:40:03.473]     newAppId: 1
+[13:40:03.473]     deleteAppId: 0
+[13:40:03.473]     deleteAppProvider: 0
+[13:40:03.473]     appId: bssh
+[13:40:03.473]     appGroup: (null)
+[13:40:03.473]     appExecPath: /usr/bin/bssh
+[13:40:03.473]     appWorkingDir: (null)
+[13:40:03.473]     appDesc: Avahi SSH Server Browser (Ubuntu)
+[13:40:03.473]     appIcon: 0x5c9cd36853b0
+[13:40:03.473]     appProvider: (null)
+[13:40:03.474] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.474]     inSync: 1
+[13:40:03.474]     syncStart: 0
+[13:40:03.474]     syncEnd: 0
+[13:40:03.474]     newAppId: 1
+[13:40:03.474]     deleteAppId: 0
+[13:40:03.474]     deleteAppProvider: 0
+[13:40:03.474]     appId: thunar
+[13:40:03.474]     appGroup: (null)
+[13:40:03.474]     appExecPath: thunar 
+[13:40:03.474]     appWorkingDir: (null)
+[13:40:03.474]     appDesc: Thunar File Manager (Ubuntu)
+[13:40:03.474]     appIcon: 0x73b7100bd8e0
+[13:40:03.474]     appProvider: (null)
+[13:40:03.474] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.474]     inSync: 1
+[13:40:03.474]     syncStart: 0
+[13:40:03.474]     syncEnd: 0
+[13:40:03.474]     newAppId: 1
+[13:40:03.474]     deleteAppId: 0
+[13:40:03.474]     deleteAppProvider: 0
+[13:40:03.474]     appId: thunar-bulk-rename
+[13:40:03.474]     appGroup: (null)
+[13:40:03.474]     appExecPath: thunar --bulk-rename 
+[13:40:03.474]     appWorkingDir: (null)
+[13:40:03.474]     appDesc: Bulk Rename (Ubuntu)
+[13:40:03.474]     appIcon: 0x73b7100bd8e0
+[13:40:03.474]     appProvider: (null)
+[13:40:03.474] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.474]     inSync: 1
+[13:40:03.474]     syncStart: 0
+[13:40:03.474]     syncEnd: 0
+[13:40:03.474]     newAppId: 1
+[13:40:03.474]     deleteAppId: 0
+[13:40:03.474]     deleteAppProvider: 0
+[13:40:03.474]     appId: cmake-gui
+[13:40:03.474]     appGroup: (null)
+[13:40:03.474]     appExecPath: cmake-gui 
+[13:40:03.474]     appWorkingDir: (null)
+[13:40:03.474]     appDesc: CMake (Ubuntu)
+[13:40:03.474]     appIcon: 0x73b7100bd8e0
+[13:40:03.474]     appProvider: (null)
+[13:40:03.475] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.475]     inSync: 1
+[13:40:03.475]     syncStart: 0
+[13:40:03.475]     syncEnd: 0
+[13:40:03.475]     newAppId: 1
+[13:40:03.475]     deleteAppId: 0
+[13:40:03.475]     deleteAppProvider: 0
+[13:40:03.475]     appId: avahi-discover
+[13:40:03.475]     appGroup: (null)
+[13:40:03.475]     appExecPath: /usr/bin/avahi-discover
+[13:40:03.475]     appWorkingDir: (null)
+[13:40:03.475]     appDesc: Avahi Zeroconf Browser (Ubuntu)
+[13:40:03.475]     appIcon: 0x5c9cd36853b0
+[13:40:03.475]     appProvider: (null)
+[13:40:03.475] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.475]     inSync: 1
+[13:40:03.475]     syncStart: 0
+[13:40:03.475]     syncEnd: 0
+[13:40:03.475]     newAppId: 1
+[13:40:03.475]     deleteAppId: 0
+[13:40:03.475]     deleteAppProvider: 0
+[13:40:03.475]     appId: qv4l2
+[13:40:03.475]     appGroup: (null)
+[13:40:03.475]     appExecPath: qv4l2
+[13:40:03.475]     appWorkingDir: (null)
+[13:40:03.475]     appDesc: Qt V4L2 test Utility (Ubuntu)
+[13:40:03.475]     appIcon: 0x73b7100bd8e0
+[13:40:03.475]     appProvider: (null)
+[13:40:03.476] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.476]     inSync: 1
+[13:40:03.476]     syncStart: 0
+[13:40:03.476]     syncEnd: 0
+[13:40:03.476]     newAppId: 1
+[13:40:03.476]     deleteAppId: 0
+[13:40:03.476]     deleteAppProvider: 0
+[13:40:03.476]     appId: jconsole-java11-openjdk
+[13:40:03.476]     appGroup: (null)
+[13:40:03.476]     appExecPath: /usr/lib/jvm/java-11-openjdk/bin/jconsole
+[13:40:03.476]     appWorkingDir: (null)
+[13:40:03.476]     appDesc: OpenJDK Java 11 Console (Ubuntu)
+[13:40:03.476]     appIcon: 0x73b7100bd8e0
+[13:40:03.476]     appProvider: (null)
+[13:40:03.476] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.476]     inSync: 1
+[13:40:03.476]     syncStart: 0
+[13:40:03.476]     syncEnd: 0
+[13:40:03.476]     newAppId: 1
+[13:40:03.476]     deleteAppId: 0
+[13:40:03.476]     deleteAppProvider: 0
+[13:40:03.476]     appId: qvidcap
+[13:40:03.476]     appGroup: (null)
+[13:40:03.476]     appExecPath: qvidcap
+[13:40:03.476]     appWorkingDir: (null)
+[13:40:03.476]     appDesc: Qt V4L2 video capture utility (Ubuntu)
+[13:40:03.476]     appIcon: 0x73b7100bd8e0
+[13:40:03.476]     appProvider: (null)
+[13:40:03.476] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.476]     inSync: 1
+[13:40:03.476]     syncStart: 0
+[13:40:03.476]     syncEnd: 0
+[13:40:03.476]     newAppId: 1
+[13:40:03.476]     deleteAppId: 0
+[13:40:03.476]     deleteAppProvider: 0
+[13:40:03.476]     appId: bvnc
+[13:40:03.476]     appGroup: (null)
+[13:40:03.476]     appExecPath: /usr/bin/bvnc
+[13:40:03.476]     appWorkingDir: (null)
+[13:40:03.476]     appDesc: Avahi VNC Server Browser (Ubuntu)
+[13:40:03.476]     appIcon: 0x5c9cd36853b0
+[13:40:03.476]     appProvider: (null)
+[13:40:03.476] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.476]     inSync: 1
+[13:40:03.476]     syncStart: 0
+[13:40:03.476]     syncEnd: 0
+[13:40:03.476]     newAppId: 1
+[13:40:03.476]     deleteAppId: 0
+[13:40:03.476]     deleteAppProvider: 0
+[13:40:03.476]     appId: thunar-volman-settings
+[13:40:03.476]     appGroup: (null)
+[13:40:03.476]     appExecPath: thunar-volman-settings
+[13:40:03.476]     appWorkingDir: (null)
+[13:40:03.476]     appDesc: Removable Drives and Media (Ubuntu)
+[13:40:03.477]     appIcon: 0x73b7100bd8e0
+[13:40:03.477]     appProvider: (null)
+[13:40:03.477] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.477]     inSync: 1
+[13:40:03.477]     syncStart: 0
+[13:40:03.477]     syncEnd: 0
+[13:40:03.477]     newAppId: 1
+[13:40:03.477]     deleteAppId: 0
+[13:40:03.477]     deleteAppProvider: 0
+[13:40:03.477]     appId: gimp
+[13:40:03.477]     appGroup: (null)
+[13:40:03.477]     appExecPath: gimp-2.10
+[13:40:03.477]     appWorkingDir: (null)
+[13:40:03.477]     appDesc: GNU Image Manipulation Program (Ubuntu)
+[13:40:03.477]     appIcon: 0x73b7100bd8e0
+[13:40:03.477]     appProvider: (null)
+[13:40:03.478] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.478]     inSync: 1
+[13:40:03.478]     syncStart: 0
+[13:40:03.478]     syncEnd: 0
+[13:40:03.478]     newAppId: 1
+[13:40:03.478]     deleteAppId: 0
+[13:40:03.478]     deleteAppProvider: 0
+[13:40:03.478]     appId: thunar-settings
+[13:40:03.478]     appGroup: (null)
+[13:40:03.478] rdp_audio_server_activated: 1 audio formats supported.
+[13:40:03.478]     appExecPath: thunar-settings
+[13:40:03.478] 	[0] - Format(WAVE_FORMAT_PCM) - Bits(16), Channels(2), Frequency(44100)
+[13:40:03.478]     appWorkingDir: (null)
+[13:40:03.478]     appDesc: File Manager Settings (Ubuntu)
+[13:40:03.478]     appIcon: 0x73b7100bd8e0
+[13:40:03.478]     appProvider: (null)
+[13:40:03.478] RDPAudio - Agreed on format 0.
+[13:40:03.478] rdp_audio_server_activated: bytesPerFrame:4, latency:5
+[13:40:03.478] Pulse Audio Sink listener socket on /mnt/wslg/PulseAudioRDPSink
+[13:40:03.478] Audio sink thread: Listening for audio connection.
+[13:40:03.479] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.479]     inSync: 1
+[13:40:03.479]     syncStart: 0
+[13:40:03.479]     syncEnd: 0
+[13:40:03.479]     newAppId: 1
+[13:40:03.479]     deleteAppId: 0
+[13:40:03.479]     deleteAppProvider: 0
+[13:40:03.479]     appId: kitty
+[13:40:03.479]     appGroup: (null)
+[13:40:03.479]     appExecPath: kitty
+[13:40:03.479]     appWorkingDir: (null)
+[13:40:03.479]     appDesc: kitty (Ubuntu)
+[13:40:03.479]     appIcon: 0x73b7100bd8e0
+[13:40:03.479]     appProvider: (null)
+[13:40:03.481] rdp_rail_notify_app_list(): rdp_peer 0x5c9cd3689d60
+[13:40:03.481]     inSync: 1
+[13:40:03.481]     syncStart: 0
+[13:40:03.481]     syncEnd: 1
+[13:40:03.481]     newAppId: 1
+[13:40:03.481]     deleteAppId: 0
+[13:40:03.481]     deleteAppProvider: 0
+[13:40:03.481]     appId: xfce4-power-manager-settings
+[13:40:03.481]     appGroup: (null)
+[13:40:03.481]     appExecPath: xfce4-power-manager-settings
+[13:40:03.481]     appWorkingDir: (null)
+[13:40:03.481]     appDesc: Power Manager (Ubuntu)
+[13:40:03.481]     appIcon: 0x73b7100bd8e0
+[13:40:03.481]     appProvider: (null)
+[13:40:06.738] Audio sink thread: connection successful on socket (66).
+[13:40:06.738] RDP Sink version (1 - 1)
+[13:45:03.453] rdp_rail_idle_handler is called on peerCtx:0x5c9cd3689d60

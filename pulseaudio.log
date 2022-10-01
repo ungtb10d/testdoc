@@ -1,0 +1,10 @@
+W: [pulseaudio] authkey.c: Failed to open cookie file '/home/wslg/.config/pulse/cookie': No such file or directory
+W: [pulseaudio] authkey.c: Failed to load authentication key '/home/wslg/.config/pulse/cookie': No such file or directory
+W: [pulseaudio] authkey.c: Failed to open cookie file '/home/wslg/.pulse-cookie': No such file or directory
+W: [pulseaudio] authkey.c: Failed to load authentication key '/home/wslg/.pulse-cookie': No such file or directory
+E: [pulseaudio] module-console-kit.c: GetSessionsForUnixUser() call failed: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.ConsoleKit was not provided by any .service files
+E: [pulseaudio] module.c: Failed to load module "module-console-kit" (argument: ""): initialization failed.
+E: [rdp-sink] module-rdp-sink.c: RDP Sink - Trying to connect to /mnt/wslg/PulseAudioRDPSink
+E: [rdp-sink] module-rdp-sink.c: Connected failed
+E: [rdp-sink] module-rdp-sink.c: RDP Sink - Trying to connect to /mnt/wslg/PulseAudioRDPSink
+E: [rdp-sink] module-rdp-sink.c: RDP Sink - Connected to fd 12
